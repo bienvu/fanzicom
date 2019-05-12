@@ -1,0 +1,83 @@
+$primary: #2b83c1; 
+$white: #fff;
+$gray: #f2f2f2;
+
+.bg-gradient {
+  background: rgb(24,54,80); /* Old browsers */
+  background: -moz-linear-gradient(top, rgba(24,54,80,1) 0%, rgba(43,131,192,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(24,54,80,1) 0%,rgba(43,131,192,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(24,54,80,1) 0%,rgba(43,131,192,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+.bg-blue {
+  background: #2b83c1;
+}
+
+.bg-blue-dark {
+  background: #1c3d57;
+}
+
+.bg-shape {
+  position: relative;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    background: url(/images/bg-shape.png) repeat-x 0 0 transparent;
+    width: 100%;
+    height: 25px;
+  }
+}
+
+.line-height-none {
+  line-height: 0;
+}
+
+.border-bottom {
+  position: relative;
+  border: 0 !important;
+  margin-bottom: 65px;
+
+  &:before {
+    position: absolute;
+    bottom: -32px;
+    left: 50%;
+    background: #2b83c1;
+    height: 5px;
+    width: 90px;
+    content: '';
+    margin-left: -45px;
+  }
+  
+
+  &.left::before {
+    left: 0;
+    margin: 0;
+  }
+
+  &.white {
+    &::before {
+      background: $white;
+    }
+  }
+}
+
+.text-white {
+  color: $white;
+}
+
+.text-gray {
+  color: #65656f;
+}
+.text-dark {
+  color: #000 !important;
+}
+
+.padding-component {
+  padding: 69px 0;
+
+  @media(max-width: 991px) {
+    padding: 50px 0;
+  }
+}
