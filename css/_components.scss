@@ -80,19 +80,19 @@
 }
 .list-icon {
   .icon {
-    background: url('/images/icon1.png') no-repeat scroll 0 0 transparent;
+    background: url('../images/icon1.png') no-repeat scroll 0 0 transparent;
     padding: 10px 0;
     padding-left: 70px;
     background-size: 55px auto;
   }
 
   .icon2 {
-    background-image: url('/images/icon2.png');
+    background-image: url('../images/icon2.png');
     background-size: 40px;
     background-position: 3px 15px;
   }
   .icon3 {
-    background-image: url('/images/icon3.png');
+    background-image: url('../images/icon3.png');
     background-size: 40px;
     background-position: 4px 16px;
   }
@@ -225,7 +225,7 @@
       position: absolute;
       top: -9px;
       left: 50%;
-      background: url(/images/shape-small.png) no-repeat scroll 0 0 transparent;
+      background: url(../images/shape-small.png) no-repeat scroll 0 0 transparent;
       width: 35px;
       height: 31px;
       text-align: center;
@@ -511,7 +511,7 @@
   }
 
   &__image {
-    background: url("/images/shape.png") no-repeat scroll center center transparent;
+    background: url("../images/shape.png") no-repeat scroll center center transparent;
     background-size: 105% auto;
     width: 290px;
     height: 253px;
